@@ -60,7 +60,7 @@ func TestGetAPIKey(t *testing.T) {
 			name:    "Malformed header 2",
 			args:    args{malformedHeader2},
 			want:    "",
-			wantErr: false,
+			wantErr: true,
 		},
 	}
 	for _, tt := range tests {
